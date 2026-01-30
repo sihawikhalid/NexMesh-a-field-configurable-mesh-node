@@ -1,1 +1,1 @@
-# field-configurable-ESP-based-mesh-node
+# NexMesh: A Field-Configurable Mesh Node 
