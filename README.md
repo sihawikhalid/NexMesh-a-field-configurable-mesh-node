@@ -60,8 +60,21 @@ During pre-deployment, the user chooses the sensors the nodes will interface wit
 **2. Deployment (Configuration)**
 During deployment, nodes are assigned IDs, roles, and sensing intervals. Nodes can be configured as either a Router or a Bridge.
 
-Initial Setup:
+**Initial Setup:**
 1. When initially flashed (or reset), the node acts as an Access Point (AP).
 2. Connect a laptop or smartphone to the default SSID: MeshConfigAP.
 3. Open a browser and navigate to: http://192.168.4.1.
 4. The Web UI configuration page will load.
+
+**Configuration A: Bridge Node**
+
+By default, the Bridge Node configuration is selected in the UI. A Bridge connects to a WiFi gateway to reach the internet.
+1. WiFi Credentials: Enter the SSID and Password for the building's WiFi Gateway.
+2. Mesh Credentials: Enter the Mesh SSID and Password. Note: All nodes on the same mesh must use the same credentials.
+3. Channel ID (Important):
+* ESP32: This field can be ignored (auto-handled).
+* ESP8266: The node must use the same channel as the WiFi Gateway. Since the Bridge must search for the gateway to extract the channel, the node must be within the vicinity of the WiFi Gateway during configuration.
+4. Node ID & Interval: Set the user-defined Node ID (unique to each node) and sensing interval.
+5. MQTT Information: Enter the Host URL, Port, Username/Password (optional), and publish/subscribe topics.
+
+Click OK. The ESP will save settings to EEPROM and display a reply message. Note: For ESP8266, this reply displays the Channel used by the gateway, which is required for configuring Router nodes.
