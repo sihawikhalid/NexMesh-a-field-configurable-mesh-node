@@ -72,8 +72,8 @@ By default, the Bridge Node configuration is selected in the UI. A Bridge connec
 1. WiFi Credentials: Enter the SSID and Password for the building's WiFi Gateway.
 2. Mesh Credentials: Enter the Mesh SSID and Password. Note: All nodes on the same mesh must use the same credentials.
 3. Channel ID (Important):
-* ESP32: This field can be ignored (auto-handled).
-* ESP8266: The node must use the same channel as the WiFi Gateway. Since the Bridge must search for the gateway to extract the channel, the node must be within the vicinity of the WiFi Gateway during configuration.
+&emsp;* ESP32: This field can be ignored (auto-handled).
+&emsp;* ESP8266: The node must use the same channel as the WiFi Gateway. Since the Bridge must search for the gateway to extract the channel, the node must be within the vicinity of the WiFi Gateway during configuration.
 4. Node ID & Interval: Set the user-defined Node ID (unique to each node) and sensing interval.
 5. MQTT Information: Enter the Host URL, Port, Username/Password (optional), and publish/subscribe topics.
 
