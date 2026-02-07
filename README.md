@@ -84,7 +84,7 @@ Click OK. The ESP will save settings to EEPROM and display a reply message. Note
 To configure a node as a Router, select the Router Node radio button. The form will update (WiFi and MQTT sections will be hidden).
 1. Mesh Credentials: Input the exact same Mesh SSID and Password as the Bridge node.
 2. Channel:
-* ESP8266: Input the same channel used by the Bridge node (as displayed during Bridge configuration).
+    * ESP8266: Input the same channel used by the Bridge node (as displayed during Bridge configuration).
 3. Node ID & Interval: Set the unique Node ID and sensing interval.
 
 Click OK to save to EEPROM. The ESP will restart and operate as a node in the mesh.
