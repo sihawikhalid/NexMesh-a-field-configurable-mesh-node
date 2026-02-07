@@ -45,5 +45,12 @@ This work introduces NexMesh, an architecture based on the painlessMesh library 
 
 // Initialize sensor variables, objects, etc. (END)
 ```
+**C. Data Acquisition.** The reading of sensor data is handled by the getSensorData() function, which is called by a background task periodically at a field-determined interval. Add your reading algorithms here:
+```c++
+// ----- Data Acquisition & Sensing Logic ----- 
+// Read sensor data (START)
 
+// [INSERT SENSOR READING LOGIC HERE]
 
+// Read sensor data (END)
+```
