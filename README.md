@@ -25,7 +25,8 @@ This work introduces NexMesh, an architecture based on the painlessMesh library 
 
 ### Usage
 
-**1. Pre-deployment (Sensing Logic)**. During pre-deployment, the user chooses the sensors the nodes will interface with. You must add the sensor-specific Arduino libraries and logic to the specific sections of the sketch outlined below.
+**1. Pre-deployment (Sensing Logic)**. 
+During pre-deployment, the user chooses the sensors the nodes will interface with. You must add the sensor-specific Arduino libraries and logic to the specific sections of the sketch outlined below.
 
 **A. Library & Variable Declaration.** Add global variables and objects associated with the sensors in the global variable declaration section:
 ```c++ 
@@ -36,7 +37,7 @@ This work introduces NexMesh, an architecture based on the painlessMesh library 
 
 // Add global variables and constants for the sensing logic (END)
 ```
-**B. Initialization** Add initialization, configuration, discovery protocols, and GPIO assignments in the setup() function:
+**B. Initialization** Add initialization, configuration, discovery protocols, and GPIO assignments in the `setup()` function:
 ```c++
 // ----- Initialization & Device Discovery -----
 // Initialize sensor variables, objects, etc. (START)
@@ -45,7 +46,7 @@ This work introduces NexMesh, an architecture based on the painlessMesh library 
 
 // Initialize sensor variables, objects, etc. (END)
 ```
-**C. Data Acquisition.** The reading of sensor data is handled by the getSensorData() function, which is called by a background task periodically at a field-determined interval. Add your reading algorithms here:
+**C. Data Acquisition.** The reading of sensor data is handled by the `getSensorData()` function, which is called by a background task periodically at a field-determined interval. Add your reading algorithms here:
 ```c++
 // ----- Data Acquisition & Sensing Logic ----- 
 // Read sensor data (START)
@@ -54,3 +55,13 @@ This work introduces NexMesh, an architecture based on the painlessMesh library 
 
 // Read sensor data (END)
 ```
+*Note:* If additional functionality is required (e.g., conditional transmissions), these can be added in the `sendSensedData()` function. Once these sensing logics are added, flash the sketch onto the desired ESP.
+
+**2. Deployment (Configuration)**
+During deployment, nodes are assigned IDs, roles, and sensing intervals. Nodes can be configured as either a Router or a Bridge.
+
+Initial Setup:
+1. When initially flashed (or reset), the node acts as an Access Point (AP).
+2. Connect a laptop or smartphone to the default SSID: MeshConfigAP.
+3. Open a browser and navigate to: http://192.168.4.1.
+4. The Web UI configuration page will load.
