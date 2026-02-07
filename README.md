@@ -78,3 +78,24 @@ By default, the Bridge Node configuration is selected in the UI. A Bridge connec
 5. MQTT Information: Enter the Host URL, Port, Username/Password (optional), and publish/subscribe topics.
 
 Click OK. The ESP will save settings to EEPROM and display a reply message. Note: For ESP8266, this reply displays the Channel used by the gateway, which is required for configuring Router nodes.
+
+**Configuration B: Router Node**
+
+To configure a node as a Router, select the Router Node radio button. The form will update (WiFi and MQTT sections will be hidden).
+1. Mesh Credentials: Input the exact same Mesh SSID and Password as the Bridge node.
+2. Channel:
+* ESP8266: Input the same channel used by the Bridge node (as displayed during Bridge configuration).
+3. Node ID & Interval: Set the unique Node ID and sensing interval.
+
+Click OK to save to EEPROM. The ESP will restart and operate as a node in the mesh.
+
+**Reset & Re-configuration**
+
+A physical reset button allows users to wipe the configuration and return the node to AP mode.
+
+* ESP8266 (NodeMCU): GPIO13 (Pin D7)
+* ESP32: GPIO5
+
+Note: Pin assignments can be changed by modifying RESET_BUTTON_PIN in the sketch.
+
+To Reset: Press and hold the pin for more than 10 seconds. The node will flash the EEPROM, remove configurations, and reset into AP mode.
