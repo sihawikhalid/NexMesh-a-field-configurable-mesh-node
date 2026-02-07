@@ -23,4 +23,7 @@ This work introduces NexMesh, an architecture based on the painlessMesh library 
 
 2. **Network Configuration (Deployment)**: Handles all networking configurations (Mesh SSID/password, WiFi gateway credentials, MQTT info) and is invoked during deployment.
 
-
+```c++
+function helloWorld() {
+  console.log("Hello, World!");
+}
