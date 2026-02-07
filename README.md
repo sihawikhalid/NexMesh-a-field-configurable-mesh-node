@@ -29,13 +29,21 @@ This work introduces NexMesh, an architecture based on the painlessMesh library 
 
 **A. Library & Variable Declaration.** Add global variables and objects associated with the sensors in the global variable declaration section:
 ```c++ 
-{
 // ----- Global Variables/Constants & Sensor Definitions ----- 
 // Add global variables and constants for the sensing logic (START)
 
 // [INSERT YOUR SENSOR VARIABLES HERE]
 
 // Add global variables and constants for the sensing logic (END)
-}
 ```
+**B. Initialization** Add initialization, configuration, discovery protocols, and GPIO assignments in the setup() function:
+```c++
+// ----- Initialization & Device Discovery -----
+// Initialize sensor variables, objects, etc. (START)
+
+// [INSERT YOUR SENSOR SETUP CODE HERE]
+
+// Initialize sensor variables, objects, etc. (END)
+```
+
 
