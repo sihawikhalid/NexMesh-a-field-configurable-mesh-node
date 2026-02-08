@@ -78,7 +78,7 @@ During pre-deployment, the user chooses the sensors the nodes will interface wit
 ```
 *Note:* If additional functionality is required (e.g., conditional transmissions), these can be added in the `sendSensedData()` function. Once these sensing logics are added, flash the sketch onto the desired ESP.
 
-**2. Deployment (Configuration)**
+**2. Deployment (Configuration).**
 During deployment, nodes are assigned IDs, roles, and sensing intervals. Nodes can be configured as either a Router or a Bridge.
 
 **Initial Setup:**
