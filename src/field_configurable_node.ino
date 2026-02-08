@@ -18,13 +18,21 @@
 
 #include <ESP8266mDNS.h> // Note: For ESP32 use ESPmDNS.h if needed
 
+
+// ----- Sensor Libraries, Global Variables/Constants & Sensor Definitions ----- 
+
 // Add sensor-specific libraries (START)
+
+// [INSERT LIBRARY DECLARATIONS HERE]
 
 // Add sensor-specific libraries (END)
 
-// Add sensor-specific global variables and objects (START)
 
-// Add sensor-specific global variables and objects (END)
+// Add global variables and constants for the sensing logic (START)
+
+// [INSERT YOUR SENSOR VARIABLES HERE]
+
+// Add global variables and constants for the sensing logic (END)
 
 // --- Configuration Constants ---
 // Default AP and MESH settings for configuration mode
@@ -159,6 +167,8 @@ void setup() {
         
         // ----- Initialization & Device Discovery -----
         // Initialize sensor variables, objects, etc. (START)
+
+        // [INSERT YOUR SENSOR SETUP CODE HERE]
 
         // Initialize sensor variables, objects, etc. (END)
         
@@ -787,6 +797,8 @@ String getSensorData() {
 
     // ----- Data Acquisition & Sensing Logic ----- 
     // Read sensor data (START)
+
+    // [INSERT SENSOR READING LOGIC HERE]
 
     // Read sensor data (END)
         
