@@ -14,7 +14,7 @@ In most cases, the mesh network topology (see Figure 1 above) is preferred for i
 
 * **Bridge Node**: Connected to the internet through a WiFi gateway. It publishes its own data and the data received from other nodes in the mesh to an MQTT topic.
 
-The Challenge & Solution
+### The Challenge & Solution
 
 One of the main challenges in deploying such meshes is adaptability. There is a need for nodes that can easily adapt to changing environments (e.g., changing WiFi credentials, API support) and are easily programmable for different sensing requirements.
 
