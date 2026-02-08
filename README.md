@@ -69,8 +69,7 @@ During deployment, nodes are assigned IDs, roles, and sensing intervals. Nodes c
 
 **Configuration A: Bridge Node**
 
-<img src="images/bridge_ui.png" alt="Alt text for the image" align="right" width="200"/>
-<p><small><em>Your caption text here (e.g., Figure 1: A sample image)</em></small></p>
+<img src="images/bridge_ui.png" alt="Alt text for the image" align="right" width="300"/>
 
 By default, the Bridge Node configuration is selected in the UI. A Bridge connects to a WiFi gateway to reach the internet.
 1. WiFi Credentials: Enter the SSID and Password for the building's WiFi Gateway.
