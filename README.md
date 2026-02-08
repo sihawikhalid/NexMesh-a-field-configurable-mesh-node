@@ -102,7 +102,7 @@ By default, the Bridge Node configuration is selected in the UI. A Bridge connec
 4. *Node ID & Interval*: Set the user-defined Node ID (unique to each node) and sensing interval.
 5. *MQTT Information*: Enter the Host URL, Port, Username/Password (optional), and publish/subscribe topics.
 
-Click OK. The ESP will save settings to EEPROM and display a reply message. Note: For ESP8266, this reply displays the Channel used by the gateway, which is required for configuring Router nodes.
+Click OK. The ESP will save settings to EEPROM and display a reply message. ***Note***: For ESP8266, this reply displays the Channel used by the gateway, which is required for configuring Router nodes.
 
 **Configuration B: Router Node** (Figure 3)
 
