@@ -15,6 +15,7 @@ In most cases, the mesh network topology (see Figure 1 above) is preferred for i
 * **Bridge Node**: Connected to the internet through a WiFi gateway. It publishes its own data and the data received from other nodes in the mesh to an MQTT topic.
 
 The Challenge & Solution
+
 One of the main challenges in deploying such meshes is adaptability. There is a need for nodes that can easily adapt to changing environments (e.g., changing WiFi credentials, API support) and are easily programmable for different sensing requirements.
 
 This work introduces NexMesh, an architecture based on the painlessMesh library that decouples the sensing component of a node from its network configuration. This allows for fast, field-configurable deployment of mesh WSNs that connect to the cloud via MQTT. This is accomplished by dividing the architecture into two components:
