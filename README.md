@@ -2,7 +2,7 @@
 # NexMesh: Field-Configurable ESP Mesh Node for BEMS
 This sketch provides the firmware for ESP microcontrollers (ESP8266 and ESP32) and is mainly intended for Building Energy Management System (BEMS) applications.
 
-### Overview
+## Overview
 
 A key component in BEMS is the ability to have fine-grained monitoring of a building's environmental metrics such as room temperature, humidity, air quality, light intensity, occupancy, and so on. This is implemented using a wireless sensor network of heterogeneous sensors that gather data and send it to a central command center, typically located in the cloud.
 
@@ -24,7 +24,7 @@ This work introduces ***NexMesh***, an architecture based on the [painlessMesh](
 
 2. **Network Configuration (Deployment)**: Handles all networking configurations (Mesh SSID/password, WiFi gateway credentials, MQTT info) and is invoked during deployment.
 
-### Usage
+## Usage
 
 To ensure the sketch compiles and runs correctly, you must install the following libraries in your Arduino IDE. The code has been tested and verified with these specific versions:
 
