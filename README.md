@@ -26,6 +26,12 @@ This work introduces ***NexMesh***, an architecture based on the [painlessMesh](
 
 ### Usage
 
+To ensure the sketch compiles and runs correctly, you must install the following libraries in your Arduino IDE. The code has been tested and verified with these specific versions:
+
+* painlessMesh (v1.5.7)
+* PubSubClient (v2.8.0)
+* ArduinoJson (v7.0.4)
+  
 **1. Pre-deployment (Sensing Logic)**. 
 During pre-deployment, the user chooses the sensors the nodes will interface with. You must add the sensor-specific Arduino libraries and logic to the specific sections of the sketch outlined below.
 
