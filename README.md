@@ -46,6 +46,13 @@ During pre-deployment, the user chooses the sensors the nodes will interface wit
 // [INSERT YOUR SENSOR SETUP CODE HERE]
 
 // Initialize sensor variables, objects, etc. (END)
+
+// ----- Device Discovery -----  
+// Execute sensor setup and device discovery (START)
+
+// [INSERT YOUR SENSOR DISCOVERY CODE HERE]
+
+// Execute sensor setup and device discovery (END)
 ```
 **C. Data Acquisition.** The reading of sensor data is handled by the `getSensorData()` function, which is called by a background task periodically at a field-determined interval. Add your reading algorithms here:
 ```c++
