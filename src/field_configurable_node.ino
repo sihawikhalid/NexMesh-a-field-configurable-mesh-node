@@ -165,7 +165,7 @@ void setup() {
         Serial.printf("Node ID: %ld, Coordinator ID: %ld, Duty Cycle: %ld seconds\n",
                       config.nodeID, config.coordinatorID, config.dutyCycle);
         
-        // ----- Initialization & Device Discovery -----
+        // ----- Initialization -----
         // Initialize sensor variables, objects, etc. (START)
 
         // [INSERT YOUR SENSOR SETUP CODE HERE]
@@ -219,9 +219,11 @@ void setup() {
             meshInit();
             Serial.println("Mesh created..");
         }
-
+        // ----- Device Discovery -----  
         // Execute sensor setup and device discovery (START)
 
+        // [INSERT YOUR SENSOR DISCOVERY CODE HERE]
+        
         // Execute sensor setup and device discovery (END)
             
         Serial.printf("Setting the duty cycle to %ld seconds", config.dutyCycle);
