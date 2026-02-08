@@ -82,6 +82,20 @@ By default, the Bridge Node configuration is selected in the UI. A Bridge connec
 
 Click OK. The ESP will save settings to EEPROM and display a reply message. Note: For ESP8266, this reply displays the Channel used by the gateway, which is required for configuring Router nodes.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 **Configuration B: Router Node**
 
 To configure a node as a Router, select the Router Node radio button. The form will update (WiFi and MQTT sections will be hidden).
