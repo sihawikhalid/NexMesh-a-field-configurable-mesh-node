@@ -85,7 +85,7 @@ During deployment, nodes are assigned IDs, roles, and sensing intervals. Nodes c
 
 **Initial Setup:**
 1. When initially flashed (or reset), the node acts as an Access Point (AP).
-2. Connect a laptop or smartphone to the default SSID: MeshConfigAP.
+2. Connect a laptop or smartphone to the default SSID: *MeshConfigAP*.
 3. Open a browser and navigate to: http://192.168.4.1.
 4. The Web UI configuration page will load.
 
