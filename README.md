@@ -37,12 +37,19 @@ During pre-deployment, the user chooses the sensors the nodes will interface wit
 
 **A. Library & Variable Declaration.** Add global variables and objects associated with the sensors in the global variable declaration section:
 ```c++ 
-// ----- Global Variables/Constants & Sensor Definitions ----- 
+// ----- Sensor Libraries, Global Variables/Constants & Sensor Definitions ----- 
+// Add sensor-specific libraries (START)
+
+// [INSERT LIBRARY DECLARATIONS HERE]
+
+// Add sensor-specific libraries (END)
+
 // Add global variables and constants for the sensing logic (START)
 
 // [INSERT YOUR SENSOR VARIABLES HERE]
 
 // Add global variables and constants for the sensing logic (END)
+
 ```
 **B. Initialization** Add initialization, configuration, discovery protocols, and GPIO assignments in the `setup()` function:
 ```c++
