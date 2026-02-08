@@ -51,7 +51,7 @@ During pre-deployment, the user chooses the sensors the nodes will interface wit
 // Add global variables and constants for the sensing logic (END)
 
 ```
-**B. Initialization** Add initialization, configuration, discovery protocols, and GPIO assignments in the `setup()` function:
+**B. Initialization.** Add initialization, configuration, discovery protocols, and GPIO assignments in the `setup()` function:
 ```c++
 // ----- Initialization & Device Discovery -----
 // Initialize sensor variables, objects, etc. (START)
