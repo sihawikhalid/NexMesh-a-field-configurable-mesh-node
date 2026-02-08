@@ -18,7 +18,7 @@ The Challenge & Solution
 
 One of the main challenges in deploying such meshes is adaptability. There is a need for nodes that can easily adapt to changing environments (e.g., changing WiFi credentials, API support) and are easily programmable for different sensing requirements.
 
-This work introduces ***NexMesh***, an architecture based on the [painlessMesh](https://github.com/gmag11/painlessMesh/tree/master) painlessMesh library that decouples the sensing component of a node from its network configuration. This allows for fast, field-configurable deployment of mesh WSNs that connect to the cloud via MQTT. This is accomplished by dividing the architecture into two components:
+This work introduces ***NexMesh***, an architecture based on the [painlessMesh](https://github.com/gmag11/painlessMesh/tree/master) library that decouples the sensing component of a node from its network configuration. This allows for fast, field-configurable deployment of mesh WSNs that connect to the cloud via MQTT. This is accomplished by dividing the architecture into two components:
 
 1. **Sensing Logic (Pre-deployment)**: Programmed once. Ideally, this is the only component where the user adds sensor-specific functionalities.
 
