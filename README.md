@@ -29,7 +29,7 @@ This work introduces ***NexMesh***, an architecture based on the [painlessMesh](
 **1. Pre-deployment (Sensing Logic)**. 
 During pre-deployment, the user chooses the sensors the nodes will interface with. You must add the sensor-specific Arduino libraries and logic to the specific sections of the sketch outlined below.
 
-**A. Library & Variable Declaration.** Add global variables and objects associated with the sensors in the global variable declaration section:
+    **A. Library & Variable Declaration.** Add global variables and objects associated with the sensors in the global variable declaration section:
 ```c++ 
 // ----- Global Variables/Constants & Sensor Definitions ----- 
 // Add global variables and constants for the sensing logic (START)
