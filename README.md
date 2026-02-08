@@ -2,20 +2,21 @@
 # NexMesh: Field-Configurable ESP Mesh Node for BEMS
 This sketch provides the firmware for ESP microcontrollers (ESP8266 and ESP32) and is mainly intended for Building Energy Management System (BEMS) applications.
 
-### Overview
+## Overview
 
 A key component in BEMS is the ability to have fine-grained monitoring of a building's environmental metrics such as room temperature, humidity, air quality, light intensity, occupancy, and so on. This can be implemented using a wireless sensor network of heterogeneous sensors that gather data and send it to a central command center, typically located in the cloud.
 
 In most cases, the mesh network topology (see Figure 1) is preferred for its wider coverage and ability to navigate sensing areas with many obstructions, which is common in smart buildings. This sketch is intended for nodes of a mesh composed of:
 
-<img src="images/iot_wsn.png" alt="iot_wsn" width="400"/>
-Figure 1. Mesh Network Topology
-
 * **Router Nodes**: Sense data at a pre-defined interval and send it to the bridge node through multi-hop communication.
 
 * **Bridge Node**: Connected to the internet through a WiFi gateway. It publishes its own data and the data received from other nodes in the mesh to an MQTT topic.
 
-The Challenge & Solution
+<img src="images/iot_wsn.png" alt="iot_wsn" width="400"/>
+Figure 1. Mesh Network Topology
+
+
+### The Challenge & Solution
 
 One of the main challenges in deploying such meshes is adaptability. There is a need for nodes that can easily adapt to changing environments (e.g., changing WiFi credentials, API support) and are easily programmable for different sensing requirements.
 
@@ -25,7 +26,7 @@ This work introduces ***NexMesh***, an architecture based on the [painlessMesh](
 
 2. **Network Configuration (Deployment)**: Handles all networking configurations (Mesh SSID/password, WiFi gateway credentials, MQTT info) and is invoked during deployment.
 
-### Usage
+## Usage
 
 To ensure the sketch compiles and runs correctly, you must install the following libraries in your Arduino IDE. The code has been tested and verified with these specific versions:
 
