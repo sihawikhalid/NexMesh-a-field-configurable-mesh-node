@@ -85,23 +85,23 @@ During deployment, nodes are assigned IDs, roles, and sensing intervals. Nodes c
 <img src="images/ui.png" alt="Alt text for the image" align="right" width="300"/>
 
 By default, the Bridge Node configuration is selected in the UI. A Bridge connects to a WiFi gateway to reach the internet.
-1. WiFi Credentials: Enter the SSID and Password for the building's WiFi Gateway.
-2. Mesh Credentials: Enter the Mesh SSID and Password. Note: All nodes on the same mesh must use the same credentials.
-3. Channel ID (Important):
+1. *WiFi Credentials*: Enter the SSID and Password for the building's WiFi Gateway.
+2. *Mesh Credentials*: Enter the Mesh SSID and Password. Note: All nodes on the same mesh must use the same credentials.
+3. *Channel ID* (Important):
     * ESP32: This field can be ignored (auto-handled).
     * ESP8266: The node must use the same channel as the WiFi Gateway. Since the Bridge must search for the gateway to extract the channel, the node must be within the vicinity of the WiFi Gateway during configuration.
-4. Node ID & Interval: Set the user-defined Node ID (unique to each node) and sensing interval.
-5. MQTT Information: Enter the Host URL, Port, Username/Password (optional), and publish/subscribe topics.
+4. *Node ID & Interval*: Set the user-defined Node ID (unique to each node) and sensing interval.
+5. *MQTT Information*: Enter the Host URL, Port, Username/Password (optional), and publish/subscribe topics.
 
 Click OK. The ESP will save settings to EEPROM and display a reply message. Note: For ESP8266, this reply displays the Channel used by the gateway, which is required for configuring Router nodes.
 
 **Configuration B: Router Node** (Figure 3)
 
 To configure a node as a Router, select the Router Node radio button. The form will update (WiFi and MQTT sections will be hidden).
-1. Mesh Credentials: Input the exact same Mesh SSID and Password as the Bridge node.
-2. Channel:
+1. *Mesh Credentials*: Input the exact same Mesh SSID and Password as the Bridge node.
+2. *Channel*:
     * ESP8266: Input the same channel used by the Bridge node (as displayed during Bridge configuration).
-3. Node ID & Interval: Set the unique Node ID and sensing interval.
+3. *Node ID & Interval*: Set the unique Node ID and sensing interval.
 
 Click OK to save to EEPROM. The ESP will restart and operate as a node in the mesh.
 
