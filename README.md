@@ -6,7 +6,7 @@ This sketch provides the firmware for ESP microcontrollers (ESP8266 and ESP32) a
 
 A key component in BEMS is the ability to have fine-grained monitoring of a building's environmental metrics such as room temperature, humidity, air quality, light intensity, occupancy, and so on. This is implemented using a wireless sensor network of heterogeneous sensors that gather data and send it to a central command center, typically located in the cloud.
 
-In most cases, the mesh network topology (see Figure 1 above) is preferred for its wider coverage and ability to navigate sensing areas with many obstructions, which is common in smart buildings. This sketch is intended for nodes of a mesh composed of:
+In most cases, the mesh network topology (see Figure 1) is preferred for its wider coverage and ability to navigate sensing areas with many obstructions, which is common in smart buildings. This sketch is intended for nodes of a mesh composed of:
 
 <img src="images/iot_wsn.png" alt="iot_wsn" width="400"/>
 Figure 1. Mesh Network Topology
