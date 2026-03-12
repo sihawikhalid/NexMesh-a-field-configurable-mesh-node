@@ -129,4 +129,4 @@ To Reset: Press and hold the pin for more than 10 seconds. The node will flash t
 
 If you use this work, please cite the following paper:
 
-S. A. Khalid, I. A. Palo, I. A. Mohammad, A. R. D. Lazim, M. A. Banocag, S. A. TanogS, "NexMesh: A Field-Configurable Open-Source Wi-Fi Mesh Node for Scalable Building Energy Management Systems," 2026 The 10th International Conference on Green Energy and Applications (ICGEA), Hanoi, Vietnam, 2026
+S. A. Khalid, I. A. Palo, I. A. Mohammad, A. R. D. Lazim, M. A. Banocag and S. A. Tanog, "NexMesh: A Field-Configurable Open-Source Wi-Fi Mesh Node for Scalable Building Energy Management Systems," 2026 The 10th International Conference on Green Energy and Applications (ICGEA), Hanoi, Vietnam, 2026
