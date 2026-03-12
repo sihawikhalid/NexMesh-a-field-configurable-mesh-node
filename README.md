@@ -124,3 +124,9 @@ A physical reset button allows users to wipe the configuration and return the no
 Note: Pin assignments can be changed by modifying RESET_BUTTON_PIN in the sketch.
 
 To Reset: Press and hold the pin for more than 10 seconds. The node will flash the EEPROM, remove configurations, and reset into AP mode.
+
+##References & Citation
+
+If you use this work, please cite the following paper:
+
+S. A. Khalid, I. A. Palo, I. A. Mohammad, A. R. D. Lazim, M. A. Banocag, S. A. TanogS, "NexMesh: A Field-Configurable Open-Source Wi-Fi Mesh Node for Scalable Building Energy Management Systems," 2026 The 10th International Conference on Green Energy and Applications (ICGEA), Hanoi, Vietnam, 2026
