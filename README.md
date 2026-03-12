@@ -125,7 +125,7 @@ Note: Pin assignments can be changed by modifying RESET_BUTTON_PIN in the sketch
 
 To Reset: Press and hold the pin for more than 10 seconds. The node will flash the EEPROM, remove configurations, and reset into AP mode.
 
-##References & Citation
+## References & Citation
 
 If you use this work, please cite the following paper:
 
